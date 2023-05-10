@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.largeDiv {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+div header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+div header h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+div header button.lib {
+  margin: 10px;
+  font-size: 1.5rem;
+  padding: 10px 10px;
+  color: white;
+  background-color: #616161;
+}
+
+div main center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+div main center h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+div main center #video {
+  height: 550px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+div.row {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  overflow-y: display;
+}
+
+div.row div.column {
+  overflow: hidden;
+  flex-grow: 1;
+  margin: 10px;
+  height: 300px;
+}
+
+div div.row div.column img.zoom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.25s;
+}
+
+#price {
+  width: 100%;
+  height: 20%;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+div.buy_button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  margin: 20px;
+}
+
+#button_buy {
+  background-color: #1c87c9;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  animation: glowing 1300ms infinite;
+}
+
+.game_description {
+  display: flex;
+  flex-direction: column;
+  overflow-y: display;
+  height: 20%;
+  margin: 20px;
+}
+
+.game_description h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.game_description #description {
+  width: 95%;
+  height: 20%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+div header button.lib:hover {
+  background-color: white;
+  color: black;
+}
+
+div div.row div.column img.zoom:hover {
+  transform: scale(1.4);
+}
+
+#button_buy:hover {
+  transform: scaleX(1.1);
+  border-radius: 100px;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #4c05a8;
+    box-shadow: 0 0 5px #3105a8;
+  }
+
+  50% {
+    background-color: #1949e8;
+    box-shadow: 0 0 20px #1923e8;
+  }
+
+  100% {
+    background-color: #0531a8;
+    box-shadow: 0 0 5px #2b05a8;
+  }
+}
+.payment_page {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment_info {
+  width: 90vh;
+
+  background-color: rgb(72, 68, 68);
+  color: white;
+  opacity: 1;
+}

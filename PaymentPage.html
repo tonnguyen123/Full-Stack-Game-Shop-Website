@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./background.css" />
+  <link rel="stylesheet" href="./PaymentPage.css" />
+  <title>Game Description</title>
+</head>
+
+<body>
+  <div class="largeDiv" id="bg">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="largeDiv">
+    <header>
+      <button class="lib">
+        <i class="fa fa-home"></i>
+        HOME PAGE
+      </button>
+      <h1 id="title">DOOM</h1>
+      <button class="lib">
+        <i class="fa fa-arrow-circle-left"></i>
+        BACK
+      </button>
+    </header>
+    <main>
+      <center>
+        <hr />
+        <h3>Game Trailer Video</h3>
+        <video id="video" autoplay controls muted></video>
+        <h3>SCREENSHOTS</h3>
+        <hr />
+      </center>
+      <div class="row">
+        <div class="column">
+          <img class="zoom" id="column1"
+            src="https://ip.truetrophies.com/remote/image.api.playstation.com/cdn/UP1003/CUSA02085_00/FREE_CONTENTaB3i8JO3D1gtvTKSzLg5/PREVIEW_SCREENSHOT1_111212.jpg?width=900" />
+        </div>
+        <div class="column">
+          <img class="zoom" id="column2"
+            src="https://ip.truetrophies.com/remote/www.truetrophies.com/customimages/026879.jpg?width=900" />
+        </div>
+        <div class="column">
+          <img class="zoom" id="column3"
+            src="https://ip.truetrophies.com/remote/image.api.playstation.com/cdn/UP1003/CUSA02085_00/FREE_CONTENT8jjtFMTyO1UM0Rv3IpnY/PREVIEW_SCREENSHOT5_111212.jpg?width=900" />
+        </div>
+        <div class="column">
+          <img class="zoom" id="column4"
+            src="https://ip.truetrophies.com/remote/image.api.playstation.com/cdn/EP1003/CUSA09357_00/FREE_CONTENTK2nml2EDqZXkEA6l0Qi7/2.jpg?width=900" />
+        </div>
+        <div class="column">
+          <img class="zoom" id="column5"
+            src="https://ip.truetrophies.com/remote/www.truetrophies.com/customimages/026881.png?width=900" />
+        </div>
+      </div>
+      <hr />
+      <div id="price"></div>
+      <div class="buy_button">
+        <a href="#" id="button_buy" class="button_buy"></a>
+      </div>
+      <div class="game_description">
+        <h2>ABOUT THIS GAME</h2>
+        <div id="description">
+        </div>
+      </div>
+
+     
+  </div>
+  </div>
+  <div class="payment_page">
+    <div class="payment_info">
+
+        <div style="text-align: right;">
+          <button class="close" onclick="closeWindow()"><i class="fa fa-close"></i></button>
+        </div>
+        <h3 align="center">CHECKOUT</h3>
+        <hr />
+        <div style="text-align: right;">
+            <div style="text-align: left;">
+                <form name="paymentForm" action="" onsubmit=" return checkEmpty()" method="post" required>
+                    <h3 id="headTitle" style="text-align: center;" id="title">DOOM</h3>
+                    <p id="PayPrice" style="text-align: center;">$6</p>
+                    <p style="font-size: 22px;">Please select your type of payment:</p>
+                      <input type="radio" id="VISA" name="CARD" value="VISA">
+                      <label for="html">VISA</label> &emsp;&emsp; &emsp;&emsp;
+                      <input type="radio" id="MASTER_CARD" name="CARD" value="MC">
+                      <label for="css">MASTER CARD</label><br><br>
+                    &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;FULL NAME:
+                    <input type="text" id="fullName" name="fullName" placeholder="Full name on your card">&nbsp;&nbsp;&nbsp;Example: John Smith<br><br>
+                    &emsp;&emsp;&emsp;&nbsp;CARD NUMBER:
+                    <input type="text" id="CARDNUM" name="CARDNUM" placeholder="16 digits of your card"> &nbsp;&nbsp;&nbsp;Example: 1234 5678 9101 1121<br><br>
+                    &emsp;&emsp;&emsp;&emsp;&nbsp;EXPIRY DATE:
+                    <input type="text" id="expiry" name="expiry" placeholder="Expiry time on your card">&nbsp;&nbsp;&nbsp;Format MM/YY<br><br>
+                    SECURITY CODE (CVV):
+                    <input type="text" id="CVV" name="CCV"placeholder="3 digits of security code">&nbsp;&nbsp;&nbsp;Example: 123<br><br>
+                    <div style="padding-left: 200px;">
+                        <input type="submit" class="PLACE_ORDER" value="PLACE ORDER">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  <script src="medium-zoom.min.js"></script>
+  <script src="main.js"></script>
+  <script src="program.js"></script>
+  <script src="PaymentPage.js"></script>
+  <script src="PlayJS.js"></script>
+</body>
+
+</html>

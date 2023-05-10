@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 4vw;
+  margin-left: 1vw;
+  color: white;
+}
+header div.search form {
+  display: flex;
+  margin-right: 1vw;
+}
+header div.search form input {
+  padding: 1rem 4rem;
+  font-size: 17px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+header div.search form button {
+  padding: 1rem;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+main {
+  height: 88vh;
+  width: 100vw;
+  display: flex;
+}
+main nav {
+  width: 15%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+main nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+main nav ul li button {
+  width: 100%;
+  min-height: 12vh;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(97, 97, 97, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+main #mainBrowser {
+  width: 85%;
+  background-color: rgba(97, 97, 97, 0.6);
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+main #mainBrowser #mainContainer {
+  margin-left: 50px;
+}
+main #mainBrowser #mainContainer .box {
+  transition: all 0.25s;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  width: 25%;
+  min-width: 160px;
+  height: 50%;
+  min-height: 160px;
+  background: rgb(127, 125, 184);
+  float: left;
+  margin: 2.8vw;
+  border-radius: 5px;
+}
+
+main nav ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+main div.container div .box:hover {
+  transform: scale(1.2);
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+} /*# sourceMappingURL=style.css.map */
